@@ -78,6 +78,78 @@ subprojects {
                 includeGroupAndSubgroups 'maven.modrinth'
             }
         }
+        maven {
+            name = "TslatEffectsLib"
+            url = "https://dl.cloudsmith.io/public/tslat/tel/maven/"
+            content {
+                includeGroupAndSubgroups "net.tslat.effectslib"
+            }
+        }
+        maven {
+            name = "TslatEntityStatus"
+            url = "https://dl.cloudsmith.io/public/tslat/tes/maven/"
+            content {
+                includeGroupAndSubgroups 'net.tslat.tes'
+            }
+        }
+        maven {
+            name = 'Modonomicon'
+            url "https://dl.cloudsmith.io/public/klikli-dev/mods/maven/"
+            content {
+                includeGroupAndSubgroups "com.klikli_dev"
+            }
+        }
+        maven {
+            name = "Mixin Extras"
+            url = "https://jitpack.io/"
+            content {
+                includeGroupAndSubgroups 'com.github.llamalad7.mixinextras'
+            }
+        }
+        maven {
+            name = "SmartBrainLib"
+            url = "https://dl.cloudsmith.io/public/tslat/sbl/maven/"
+            content {
+                includeGroupAndSubgroups 'net.tslat.smartbrainlib'
+            }
+        }
+        maven {
+            name = "JEI"
+            url = "https://maven.blamejared.com/"
+            content {
+                includeGroupAndSubgroups 'mezz.jei'
+            }
+        }
+        maven {
+            name = "Cardinal Components API"
+            url = 'https://maven.ladysnake.org/releases'
+            content {
+                includeGroupAndSubgroups 'dev.onyxstudios.cardinal-components-api'
+            }
+        }
+        maven {
+            name = "Reach Entity Attributes"
+            url "https://maven.jamieswhiteshirt.com/libs-release"
+            content {
+                includeGroupAndSubgroups "com.jamieswhiteshirt"
+            }
+        }
+        maven {
+            name = 'GeckoLib'
+            url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+            content {
+                includeGroupAndSubgroups 'software.bernie.geckolib'
+                includeGroupAndSubgroups 'com.eliotlash.mclib'
+            }
+        }
+        maven {
+            name "playerAnimator"
+            url 'https://maven.kosmx.dev/'
+            content {
+                includeGroupAndSubgroups 'dev.kosmx.player-anim'
+            }
+        }
+
 
         // Non-specific
         maven {
@@ -103,12 +175,14 @@ subprojects {
                 contributors: contributors,
                 license: license,
                 icon: icon,
+                github_name: github_name,
                 neoforge_version: neoforge_version,
                 fabric_loader_version: fabric_loader_version,
                 fabric_version: fabric_version,
                 minecraft_version: minecraft_version,
                 next_minecraft_version: next_minecraft_version,
-                github_name: github_name
+                tommylib_version: tommylib_version,
+                minejago_version: minejago_version
         ]
         inputs.properties replaceProperties
 

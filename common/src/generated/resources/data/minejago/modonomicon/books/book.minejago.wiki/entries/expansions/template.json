@@ -1,0 +1,27 @@
+{
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "category": "minejago:expansions",
+  "description": "book.minejago.wiki.expansions.template.description",
+  "hide_while_locked": false,
+  "icon": {
+    "item": "minecraft:air"
+  },
+  "name": "book.minejago.wiki.expansions.template.name",
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "anchor": "",
+      "condition": {
+        "type": "modonomicon:none"
+      },
+      "show_title_separator": true,
+      "text": "book.minejago.wiki.expansions.template.summary.text",
+      "title": "book.minejago.wiki.expansions.template.summary.title",
+      "use_markdown_in_title": false
+    }
+  ],
+  "show_when_any_parent_unlocked": false,
+  "x": 10,
+  "y": 3
+}

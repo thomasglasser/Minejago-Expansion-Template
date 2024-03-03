@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           # Replace with mod name
-          name: Multiloader Template
+          name: "Minejago Expansion: Template"
           if-no-files-found: error
           path: |
             fabric/build/libs

@@ -22,7 +22,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "dev.thomasglasser.multiloadertemplate.MultiloaderTemplateFabric"
+            "dev.thomasglasser.minejagoexpansiontemplate.MinejagoExpansionTemplateFabric"
         ]
     },
     "mixins": [
@@ -34,7 +34,9 @@
         "fabricloader": ">=${fabric_loader_version}",
         "fabric-api": ">=${fabric_version}",
         "minecraft": ">=${minecraft_version}",
-        "java": ">=17"
+        "java": ">=17",
+        "tommylib": "${tommylib_version}",
+        "minejago": "${minejago_version}"
     },
     "custom": {
         "mc-publish": {

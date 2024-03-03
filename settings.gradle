@@ -29,5 +29,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'MultiLoader Template'
+rootProject.name = 'Minejago Expansion Template'
 include("common", "fabric", "neoforge")

@@ -10,10 +10,13 @@ This guide will show how to import the MultiLoader Template into IntelliJ IDEA. 
 1. Clone or download this repository to your computer.
 2. Configure the project by editing the `gradle.properties` file. You will also need to change the `rootProject.name`  property in `settings.gradle`, this should match the folder name of your project, or else IDEA may complain.
 3. Configure the `build.yml` and `publish.yml` files with the proper name and link
-4. Open the template's root folder as a new project in IDEA. This is the folder that contains this README file and the gradlew executable.
-5. If your default JVM/JDK is not Java 17 you will encounter an error when opening the project. This error is fixed by going to `File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM`and changing the value to a valid Java 17 JVM. You will also need to set the Project SDK to Java 17. This can be done by going to `File > Project Structure > Project SDK`. Once both have been set open the Gradle tab in IDEA and click the refresh button to reload the project.
-6. Open your Run/Debug Configurations. Under the Application category there should now be options to run Forge and Fabric projects. Select one of the client options and try to run it.
-7. Assuming you were able to run the game in step 7 your workspace should now be set up.
+4. Configure the names and values of classes to match mod name.
+5. Use the template images on the Trello to make a logo and replace the `logo.png` file with the new one.
+6. Open the template's root folder as a new project in IDEA. This is the folder that contains this README file and the gradlew executable.
+7. If your default JVM/JDK is not Java 17 you will encounter an error when opening the project. This error is fixed by going to `File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM`and changing the value to a valid Java 17 JVM. You will also need to set the Project SDK to Java 17. This can be done by going to `File > Project Structure > Project SDK`. Once both have been set open the Gradle tab in IDEA and click the refresh button to reload the project.
+8. Open your Run/Debug Configurations. Under the Application category there should now be options to run Forge and Fabric projects. Select one of the client options and try to run it.
+9. Assuming you were able to run the game in the previous step your workspace should now be set up.
+10. Add the discord server webhook to the GitHub page so updates are posted
 
 ### Eclipse
 While it is possible to use this template in Eclipse it is not recommended. During the development of this template multiple critical bugs and quirks related to Eclipse were found at nearly every level of the required build tools. While we continue to work with these tools to report and resolve issues support for projects like these are not there yet. For now Eclipse is considered unsupported by this project. The development cycle for build tools is notoriously slow so there are no ETAs available.
